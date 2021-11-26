@@ -1,0 +1,45 @@
+/* Btn */
+
+@mixin interior-btn {
+    padding: 18px 20px;
+    font-size: 16px;
+    background: linear-gradient($color-secondary, $color-primary);
+    color: $color-fond-light;
+    cursor: pointer;  
+        &:hover {
+            background-color: lighten($color-primary, 35%);
+            box-shadow: gray 0px 5px 10px 0px;
+        }
+}
+@mixin border-btn {
+    border-radius: 25px;
+    border: none;
+    box-shadow: gray 0px 2px 8px 0px;
+    background-color: $color-fond;
+}
+
+/* Icon */ 
+@mixin size-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer */ 
+@mixin footer {
+    background-color: $color-fond-footer;
+    color: $color-police-light;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 40px 15px;
+    line-height: 30px;
+    font-size: 16px;
+    .fas {
+        @include size-icon;
+        margin-right: 10px;
+    }
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* Btn */
+/* Icon */
+/* Footer */
+/* Fonts */
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+* {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Règle générale */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.home_body {
+  background-color: #EFEFEF;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+h3 {
+  font-family: 'Shrikhand', sans-serif;
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: #F8F8F8;
+  padding: 0;
+}
+
+/* Logo */
+.home_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F8F8F8;
+  padding: 15px;
+}
+
+.home_logo .header_logo {
+  width: 45%;
+}
+
+/* Header */
+.home_research {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-color: #EAEAEA;
+  font-size: 20px;
+  padding: 20px 0 20px 0;
+  -webkit-box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.search_bar {
+  background-color: #EAEAEA;
+  font-size: 18px;
+  width: 150px;
+  border: none;
+  margin-left: 15px;
+}
+
+.search_bar::-webkit-input-placeholder {
+  font-size: 18px;
+  color: black;
+}
+
+.search_bar:-ms-input-placeholder {
+  font-size: 18px;
+  color: black;
+}
+
+.search_bar::-ms-input-placeholder {
+  font-size: 18px;
+  color: black;
+}
+
+.search_bar::placeholder {
+  font-size: 18px;
+  color: black;
+}
+
+/* Home Menu */
+.home_menu {
+  text-align: center;
+  padding: 50px 34px;
+}
+
+.home_menu h2 {
+  padding: 0 10px;
+}
+
+.home_menu p {
+  margin: 20px 0 30px 0;
+  font-weight: light;
+}
+
+.home_menu .home_btn {
+  padding: 18px 20px;
+  font-size: 16px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #F8F8F8;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+  -webkit-box-shadow: gray 0px 2px 8px 0px;
+          box-shadow: gray 0px 2px 8px 0px;
+  background-color: #EFEFEF;
+}
+
+.home_menu .home_btn:hover {
+  background-color: #f2eafb;
+  -webkit-box-shadow: gray 0px 5px 10px 0px;
+          box-shadow: gray 0px 5px 10px 0px;
+}
+
+/* Fonctionnement */
+.home_functioning {
+  background-color: #F8F8F8;
+  padding: 50px 20px;
+}
+
+.function_list {
+  padding: 25px 35px;
+  margin: 25px 0px;
+  border-radius: 25px;
+  border: none;
+  -webkit-box-shadow: gray 0px 2px 8px 0px;
+          box-shadow: gray 0px 2px 8px 0px;
+  background-color: #EFEFEF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: #E0E0E0 0px 5px 10px 0px;
+          box-shadow: #E0E0E0 0px 5px 10px 0px;
+  cursor: pointer;
+  position: relative;
+}
+
+.function_list:hover {
+  background-color: #f2eafb;
+}
+
+.function_list .fas {
+  width: 20px;
+  height: 20px;
+  color: gray;
+  font-size: 20px;
+}
+
+.function_list:hover .fas {
+  color: #9356DC;
+}
+
+.function_list .list_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  background-color: #9356DC;
+  color: #F8F8F8;
+  font-size: 15px;
+  position: absolute;
+  left: -12px;
+}
+
+/* Restaurant */
+/* Footer */
+footer {
+  background-color: #3D3D3D;
+  color: #F8F8F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0 40px 15px;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+footer .fas {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
