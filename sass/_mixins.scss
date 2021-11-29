@@ -1,8 +1,8 @@
 /* Btn */
-
 @mixin interior-btn {
     padding: 18px 20px;
     font-size: 16px;
+    font-weight: bolder;
     background: linear-gradient($color-secondary, $color-primary);
     color: $color-fond-light;
     cursor: pointer;  
@@ -42,4 +42,9 @@
             text-decoration: underline;
         }
     }
+}
+
+/* Box shadow*/
+@mixin box-shadow {
+    box-shadow: #E0E0E0 0px 5px 10px 0px;
 }

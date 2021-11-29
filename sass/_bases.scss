@@ -1,0 +1,78 @@
+/* Fonts */
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto/Roboto-Light.ttf); 
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+* {
+    font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+}
+
+/* Règle générale */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.home_body {
+    background-color: $color-fond;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Roboto-Medium';
+    font-size: 28px;
+}
+
+h3 {
+    font-family: 'Roboto-Medium';
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+
+h4 {
+    font-family: 'Shrikhand', sans-serif;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+    color: $color-police-light;
+    padding: 0;
+}
+
+
+/* Logo */
+.home_logo {
+    display: flex;
+    justify-content: center;
+    background-color: $color-fond-light;
+    padding: 15px;
+    .header_logo {
+        width: 45%;
+    }
+    .fas{
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        margin: 0rem 1.85rem;
+        position: absolute;
+        top: 20px;
+    }
+}
+
+/* Footer */ 
+footer {
+    @include footer;
+}
