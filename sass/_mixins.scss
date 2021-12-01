@@ -7,14 +7,14 @@
     color: $color-fond-light;
     cursor: pointer;  
         &:hover {
-            background-color: lighten($color-primary, 35%);
+            background: linear-gradient($color-secondary-light, $color-primary-light);
             box-shadow: gray 0px 5px 10px 0px;
         }
 }
 @mixin border-btn {
     border-radius: 25px;
     border: none;
-    box-shadow: gray 0px 2px 8px 0px;
+    box-shadow: gray 0px 5px 10px 0px;
     background-color: $color-fond;
 }
 
@@ -22,6 +22,22 @@
 @mixin size-icon {
     width: 20px;
     height: 20px;
+}
+
+/* Heart hover */
+@mixin like-hover {
+    background-image: linear-gradient($color-primary, $color-secondary);
+    opacity: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 350ms;
+    transform: scale(1);
+    transform-origin: center;
+    &:hover { 
+        transform: scale(1.11);
+        opacity: 1;
+    }   
 }
 
 /* Footer */ 

@@ -11,117 +11,138 @@
 
     <body>
         <main>
-            <header class="headerIndex text-center">
+            <header class="header_logo">
+                <a href="homepage.html#home_restaurant">
                 <i class="fas fa-arrow-left"></i>
-                <img src="./images/logo/ohmyfood.png" alt="Logo ohmyfood">
+                </a>
+                <img src="./images/logo/ohmyfood.png" alt="Logo ohmyfood" class="logo_img">
             </header>
     
             <section>
-                <img class="imgHeader" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" title="image du plat">
+                <img class="menu_img" src="./images/restaurants/menu_delice.jpg" title="plat de Le délice des sens">
             </section>
     
-            <section>
-                    <div class="h2Universelle">
-                        <h2 class="h2">Le délice des sens <i class="far fa-heart"></i></h2>
+        <!-- Resto Menu -->
+            <div class="menu">    
+                <div class="menu_head">
+                    <h1>Le délice des sens </h1>
+                    <i class="far fa-heart menu_like"></i>
+                    <i class="fas fa-heart menu_like menu_like--hover"></i>
+                </div>
+                    
+    <!-- Entrées -->
+            <h2 class="menu_section">ENTRÉES</h2>
+    
+                <div class="menu_card menu_card--anim1">
+                    <div class="menu_body">
+                        <p class="card_title">Tartare de thon</p>
+                        <p class="card_text"><span>Assaisonné au yuzu</span></p>
                     </div>
-                    <h3 class="titreSection">ENTRÉES</h3>
-    
-                <article class="articleMenu">
-                    <h3>Tartare de thon</h3>
-                    <div class="descriptionMenu">
-    
-                        <p>Assaisonné au yuzu</p>
-                        <p class="prix">25€</p>
+                    <p class="price">25€</p>
+                    <div class="card_check check--hover">
+                        <i class="fas fas--hover fa-check-circle"></i>
+                    </div>  
+                </div>
+
+                <div class="menu_card menu_card--anim2">
+                    <div class="menu_body">
+                        <p class="card_title">Bouchée de homard croustillant</p>
+                        <p class="card_text"><span>Et sa farandole de petits légumes</span></p>
                     </div>
-                </article>
-    
-                <article class="articleMenu">
-                    <h3>Bouchée de homard courstillant</h3>
-                    <div class="descriptionMenu">
-    
-                        <p>Et sa farandole de petits légumes</p>
-                        <p class="prix">35€</p>
+                    <p class="price">35€</p>
+                    <div class="card_check check--hover">
+                        <i class="fas fas--hover fa-check-circle"></i>
+                    </div>  
+                </div>
+
+                <div class="menu_card menu_card--anim3">
+                    <div class="menu_body">
+                        <p class="card_title">Velouté de cèpes</p>
+                        <p class="card_text"><span>Aux truffes</span></p>
                     </div>
-                </article>
-    
-                <article class="articleMenu">
-                    <h3>Velouté de cèpes</h3>
-                    <div class="descriptionMenu">
-    
-                        <p>Aux truffes</p>
-                        <p class="prix">20€</p>
-                    </div>
-                </article>
-    
-            </section>
-    
-            <section>
+                    <p class="price">20€</p>
+                    <div class="card_check check--hover">
+                        <i class="fas fas--hover fa-check-circle"></i>
+                    </div>  
+                </div>            
                 
-                <h3 class="titreSection">PLATS</h3>
-                
-                <article class="articleMenu">
-                    <h3>Poulet rôti aux herbes de provence</h3>
-                    <div class="descriptionMenu">
-    
-                        <p>Et sa crème de truffe</p>
-                        <p class="prix">40€</p>
+    <!-- Plats -->        
+            <h2 class="menu_section">PLATS</h2>
+        
+                <div class="menu_card menu_card--anim1">
+                    <div class="menu_body">
+                        <p class="card_title">Poulet rôti aux herbes de provence</p>
+                        <p class="card_text"><span>Et sa crème de tuffes</span></p>
                     </div>
-                </article>
-    
-                <article class="articleMenu">
-                    <h3>Langouste rôtie</h3>
-                    <div class="descriptionMenu">
-         
-                        <p>Et ses légumes de saison</p>
-                        <p class="prix">35€</p>
+                    <p class="price">40€</p>
+                    <div class="card_check check--hover">
+                    <i class="fas fas--hover fa-check-circle"></i>
+                    </div>  
+                </div>
+
+                <div class="menu_card menu_card--anim2">
+                    <div class="menu_body">
+                        <p class="card_title">Langouste rôtie</p>
+                        <p class="card_text"><span>Et ses légumes de saison</span></p>
                     </div>
-                </article>
-    
-                <article class="articleMenu">
-                    <h3>Côte de boeuf angus</h3>
-                    <div class="descriptionMenu">
-    
-                        <p>Et sa purée de panais</p>
-                        <p class="prix">44€</p>
+                    <p class="price">35€</p>
+                    <div class="card_check check--hover">
+                    <i class="fas fas--hover fa-check-circle"></i>
+                    </div>  
+                </div>
+
+                <div class="menu_card menu_card--anim3">
+                    <div class="menu_body">
+                        <p class="card_title">Côté de boeuf angus</p>
+                        <p class="card_text"><span>Et sa purée de panais</span></p>
                     </div>
-                </article>
-    
-            </section>
-    
-            <section>
-                
-                <h3 class="titreSection">DESSERTS</h3>
-                
-                <article class="articleMenu">
-                    <h3>farandole de desserts</h3>
-                    <div class="descriptionMenu">
-    
-                        <p>Du chef</p>
-                        <p class="prix">18€</p>
+                    <p class="price">44€</p>
+                    <div class="card_check check--hover">
+                    <i class="fas fas--hover fa-check-circle"></i>
+                    </div>  
+                </div>
+            
+    <!-- Desserts -->          
+            <h2 class="menu_section">DESSERTS</h2>    
+            
+                <div class="menu_card menu_card--anim1">
+                    <div class="menu_body">
+                        <p class="card_title">Farandole de desserts</p>
+                        <p class="card_text"><span>Du chef</span></p>
                     </div>
-                </article>
-    
-                <article class="articleMenu">
-                    <h3>Crème brulée</h3>
-                    <div class="descriptionMenu">
-    
-                        <p>Revisitée</p>
-                        <p class="prix">22€</p>
+                    <p class="price">18€</p>
+                    <div class="card_check check--hover">
+                    <i class="fas fas--hover fa-check-circle"></i>
+                    </div>  
+                </div>
+
+                <div class="menu_card menu_card--anim2">
+                    <div class="menu_body">
+                        <p class="card_title">Crème brûlée</p>
+                        <p class="card_text"><span>Revisitée</span></p>
                     </div>
-                </article>
-    
-                <article class="articleMenu">
-                    <h3>Tiramisu</h3>
-                    <div class="descriptionMenu">
-    
-                        <p>A la noisette</p>
-                        <p class="prix">23€</p>
+                    <p class="price">22€</p>
+                    <div class="card_check check--hover">
+                    <i class="fas fas--hover fa-check-circle"></i>
+                    </div>  
+                </div>
+
+                <div class="menu_card menu_card--anim3">
+                    <div class="menu_body">
+                        <p class="card_title">Tiramisu</p>
+                        <p class="card_text"><span>À la noisette</span></p>
                     </div>
-                </article>
-            </section>
-    
-            <div class="btn">
-                <button class="btnIndex text-center">Commander</button>
+                    <p class="price">23€</p>
+                    <div class="card_check check--hover">
+                    <i class="fas fas--hover fa-check-circle"></i>
+                    </div>  
+                </div>
+
+    <!-- Commande-->
+            <div class="menu_btn">
+                <button class="order_btn">Commander</button>
+            </div>
+
             </div>
         </main>
     

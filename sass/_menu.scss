@@ -1,0 +1,183 @@
+/* Image Menu */
+.menu_img{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 55px;
+    z-index: -1;
+    object-fit: cover;
+    object-position: 25%;
+}
+
+/* Menu header */
+.menu {
+    background-color: $color-fond;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px; 
+    margin-top: 250px;
+    padding: 25px 15px 15px 30px;
+    &_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding-bottom: 20px;
+        h1 {
+            font-family: 'Shrikhand', sans-serif;
+            font-weight: lighter;
+            font-size: 24px;
+        }
+    }    
+    &_like {
+        display: none;
+        position: absolute;
+        color: black;
+        right: 10%;
+        cursor: pointer;  
+        font-size: 30px;
+    }
+    &_like--hover {
+        @include like-hover;
+    }
+}
+
+/* Menu Part*/
+.menu_part{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;   
+}
+
+
+.menu_section{
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin: 25px 0;
+    display: block;
+    position: relative;
+    &::after{
+        content: '';
+        height: 3px;
+        width: 40px;
+        background-color: $color-tertiary;
+        display: block;
+        position: absolute;
+        bottom: -8px;
+    }
+}
+/* Card Menu */
+.menu_card{
+    margin-bottom: 20px;;
+    background-color: $color-fond-light;
+    border-radius: 15px;
+    @include box-shadow;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+
+    .price {
+        position: absolute;
+        right: 13px;
+        bottom: 0px;
+        font-weight: bold;
+        transform: translate(0);
+        transition: transform 200ms 60ms linear;
+        font-size: 15px;
+    }
+    
+    p{
+        margin: 10px 10px;
+    }
+  
+    &:hover .price{
+            transform: translate(-60px);
+    }
+
+    &:hover .fas{
+        transform: rotate(1turn);
+    }
+    
+    &:hover .card_check{
+        transform: translateX(-76px);
+       
+    }
+    
+    &:hover .card_text{
+      width: 60%;
+    }
+
+    &:hover .card_title{
+        width: 70%;
+    }
+    
+    .card_text{
+        overflow-x: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: width 250ms linear;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .card_title{
+        font-weight: bolder;
+        width: 100%;
+        overflow-x: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: width 200ms 50ms linear;   
+    }
+}
+
+.card_check{
+    background-color: #99E2D0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transform: translate(0px);
+    right: -76px;
+    transition: transform 450ms  ease-in-out;
+    position: absolute;
+        
+    .fas {
+        color: white;
+        transition: transform 450ms;
+        font-size: 1.5em;
+    }
+
+}
+
+.menu_card--anim1{
+    animation: slide 0.5s;  
+}
+
+.menu_card--anim2{
+    animation: slide 1s;  
+}
+
+.menu_card--anim3{
+    animation: slide 1.5s;  
+}
+
+.menu_card--anim4{
+    animation: slide 2s;  
+}
+
+/* Bouton Commande */
+.menu_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.order_btn {
+    @include interior-btn;
+    @include border-btn;
+}
