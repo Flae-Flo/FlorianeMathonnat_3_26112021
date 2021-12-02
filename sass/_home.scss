@@ -44,6 +44,15 @@
 .home_functioning {
     background-color: $color-fond-light;
     padding: 50px 25px;
+    @media #{$pc} {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+    }
 }
 
 .function_list{
@@ -82,6 +91,7 @@
         position: absolute;
         left: -12px;
     }
+
 }
 
 /* Restaurant */
@@ -93,6 +103,12 @@
     gap: 20px;
     h2{
         width: 100%;
+    }
+    @media #{$pc} {
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
@@ -141,14 +157,18 @@
             }
         }
     }
+
     &_img{
-           -o-object-fit: cover;
-              object-fit: cover;
-           -o-object-position: 50% 60%;
-              object-position: 50% 60%;
+        object-fit: cover;
+        object-position: 50% 60%;
         border-top-left-radius: 32px;
         border-top-right-radius: 32px;
         width: 100%;
         height: 70%;
+    }
+
+    @media #{$pc} {
+        width: 400px;
+        height: 350px;
     }
 }

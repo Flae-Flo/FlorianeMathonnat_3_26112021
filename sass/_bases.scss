@@ -23,9 +23,11 @@
     margin: 0;
 }
 
-.home_body {
-    background-color: $color-fond;
+body {
     font-size: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
 }
 
 h2 {
@@ -51,20 +53,23 @@ a {
 .header_logo {
     display: flex;
     justify-content: center;
-    background-color: $color-fond-light;
     padding: 15px;
-    .logo_img {
-        width: 45%;
+    .img_logo {
+        width: 40%;
     }
     .fas{
         color: black;
         display: flex;
-        /*align-items: center;*/
         font-size: 20px;
         margin: 0rem 1.85rem;
         position: absolute;
         top: 20px;
         left: -10px;
+        @media #{$pc} {
+            position: relative;
+            left: -300px;
+            font-size: 40px;
+        }
     }
 }
 
