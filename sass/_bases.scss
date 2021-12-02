@@ -66,9 +66,13 @@ a {
         top: 20px;
         left: -10px;
         @media #{$pc} {
+            display: flex;
+            align-items: center;
             position: relative;
-            left: -300px;
-            font-size: 40px;
+            font-size: 30px;
+            top:0;
+            padding: 16px 20px;
+            
         }
     }
 }
