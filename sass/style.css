@@ -721,7 +721,7 @@ footer a:hover {
   text-overflow: ellipsis;
   -webkit-transition: width 250ms linear;
   transition: width 250ms linear;
-  width: 100%;
+  width: 85%;
   font-size: 18px;
 }
 
