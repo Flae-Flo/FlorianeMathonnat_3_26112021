@@ -59,7 +59,6 @@
 }
 
 .menu_section{
-    font-family: 'Roboto-Light', sans-serif;
     font-size: 20px;
     text-align: left;
     margin: 25px 0;
@@ -204,6 +203,7 @@
     display: flex;
     justify-content: center;
 }
+
 .order_btn {
     @include interior-btn;
     @include border-btn;
