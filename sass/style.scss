@@ -1,7 +1,7 @@
-@import './variables';
-@import './mixins';
-@import './bases';
-@import './load-spinner';
-@import './home';
-@import './menu';
+@import './Utils/variables';
+@import './Utils/mixins';
+@import './base/bases';
+@import './components/load-spinner';
+@import './pages/home';
+@import './pages/menu';
 
