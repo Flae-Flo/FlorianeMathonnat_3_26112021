@@ -29,7 +29,6 @@
     background-image: linear-gradient($color-primary, $color-secondary);
     opacity: 0;
     background-clip: text;
-    -webkit-background-clip: text;
     color: transparent;
     transition: all 350ms;
     transform: scale(1);
@@ -38,35 +37,6 @@
         transform: scale(1.11);
         opacity: 1;
     }   
-}
-
-/* Footer */ 
-@mixin footer {
-    background-color: $color-fond-footer;
-    color: $color-police-light;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0 40px 15px;
-    line-height: 30px;
-    font-size: 16px;
-    .fas {
-        @include size-icon;
-        margin-right: 10px;
-    }
-    a {
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-    
-    @media #{$pc} {
-        h4{
-            display: flex;
-            justify-content: center;
-            font-size: 30px;
-        }
-        font-size: 20px;
-    }
 }
 
 /* Box shadow*/

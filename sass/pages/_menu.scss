@@ -169,36 +169,19 @@
 }
 
 .menu_card--anim1{
-    -webkit-animation: slide 1s;
-            animation: slide 1s;  
+    animation: slide 1s;  
 }
 
 .menu_card--anim2{
-    -webkit-animation: slide 1.5s;
-            animation: slide 1.5s;  
+    animation: slide 1.5s;  
 }
 
 .menu_card--anim3{
-    -webkit-animation: slide 2s;
-            animation: slide 2s;  
+    animation: slide 2s;  
 }
 
 .menu_card--anim4{
-    -webkit-animation: slide 2.5s;
-            animation: slide 2.5s;  
-}
-
-@-webkit-keyframes slide{
-    0%{
-        transform: translateY(15px);
-        opacity: 0;
-    }
-
-
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
+    animation: slide 2.5s;  
 }
 
 @keyframes slide{

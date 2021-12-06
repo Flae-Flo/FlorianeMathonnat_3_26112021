@@ -4,8 +4,7 @@
   z-index: -1;
   top: 20%;
   left: 50%;
-  margin-left: -4em
-
+  margin-left: -4em;
 }
 
 
@@ -16,8 +15,7 @@
   border-radius: 50%;
   position: relative;
   background: repeating-linear-gradient($color-secondary, $color-primary, $color-tertiary);
-  -webkit-animation: load-spinner .7s linear infinite;
-          animation: load-spinner .7s linear infinite;
+  animation: load-spinner .7s linear infinite;
 }
 
 .spinner::before,
@@ -45,16 +43,6 @@
   
 }
 
-@-webkit-keyframes load-spinner{
-  from{
-      transform: rotateZ(0);
-    
-  }
-  to{
-      transform: rotateZ(360deg);
-  }
-}
-
 @keyframes load-spinner{
   from{
       transform: rotateZ(0);
@@ -64,15 +52,6 @@
       transform: rotateZ(360deg);
   }
 }
-
-@-webkit-keyframes page{
-  0% {
-      transform: scale(0);
-  }
-  100% {
-      transform: scale(1);
-      }
-  }
 
 @keyframes page{
   0% {
@@ -84,7 +63,6 @@
   }
 
 .after_load{
-  -webkit-animation: page 0ms 2s both;
-          animation: page 0ms 2s both;
+  animation: page 0ms 2s both;
   background-color: white;
 }
